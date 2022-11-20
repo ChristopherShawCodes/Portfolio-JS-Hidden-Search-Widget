@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, #7d5fff,#7158e2);
+    font-family: 'Roboto','sans-serif';
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+.search{
+    position: relative;
+    height: 50px;
+}
+
+.search .input{
+    background-color: white;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+.btn{
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+
+.btn:focus,.input:focus{
+    outline: none;
+}
+
+.search.active .input{
+    width: 200px;
+}
+
+.search.active .btn{
+    transform: translateX(198px);
+}
+
+
+.footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+    bottom: 20px;
+    color: silver;
+    width: 100%;
+    position: absolute;
+    padding-left: 5%;
+}
+
+.logo{
+    margin: 4px;
+    color: #6693C1;
+}
+
+.icon{
+    width: 5%;
+}
